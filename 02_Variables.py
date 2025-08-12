@@ -19,7 +19,7 @@ print(_name)
 first_name = 'Giri'  # valid variable name, using underscore instead of hyphen
 # 10_name = 'Giri'  # invalid variable name, cannot start with a number
 
-x = 100
+x = 100     # integer variable
 print(x)
 
 
@@ -112,3 +112,13 @@ username = input('Enter your username: ')
 password = input('Enter your password: ')
 if(len(username) or len(password) < 5):
     print('Username and password must be at least 5 characters long')
+
+
+# complex_number = real + imaginaryj  # complex number in Python
+
+c1 = 3 + 4j  # complex number
+print(c1, 'is a ', type(c1))  # printing complex number and its type
+
+c2 = complex(10,10)
+c3 = c1 + c2  # adding complex numbers
+print(c3) # 13 + 14j
