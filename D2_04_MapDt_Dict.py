@@ -40,3 +40,10 @@ for keys in d1:
 
 for k, v in d1.items():
     print(k,':', v)
+
+
+dict1 = {'a': 'apple', 'b': 'banana', 'c': 'cherry', 'd': 'date', 'e':'papaya'}
+dict2 = {'e': '', 'f': 'fig', 'g': 'grape'}
+
+result1 = dict2 | dict1
+print(result1)

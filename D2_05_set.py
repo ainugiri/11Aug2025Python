@@ -28,3 +28,34 @@ d1.discard(2)
 print(d1)
 
 # set operations : union, intersection, difference, symmetric difference
+
+
+# test = {'Giri','Mohammed','Rose','Steve'}
+# cloud = set(['James','Giri','Mohammed','Michael','Steve'])
+
+# dev = {'Gopi','Giri','Mohammed','Rose','Steve'}
+# union - merging the two sets, remove duplicates
+
+newset = dev.union(test)  # dev | test
+print(newset)  # {'Giri', 'Rose', 'Mohammed', 'Steve', 'Gopi', 'Jackson', 'James'}  
+
+# commin elements in both sets -> 
+commonset = dev.intersection(test)  # dev & test -> each element present in both sets
+print(commonset)  
+
+ocs = dev & test & cloud  # common elements in dev, test, and cloud
+print(ocs)  # {'Giri', 'Mohammed', 'Steve'}
+
+# difference - elements in dev but not in test
+onlytest = test.difference(cloud) # test - cloud 
+print(onlytest)  # {'rose'}
+
+onlytesting = test - dev - cloud  # test - dev - cloud
+print(onlytesting)  # {'rose'}
+
+onlydev = dev - test - cloud
+print(onlydev)  # {'Gopi', 'Jackson'}
+
+#  union -> set1 union set2  or set1 | set2
+# intersection -> set1 intersection set2  or set1 & set2
+# difference -> set1 difference set2  or set1 - set2
